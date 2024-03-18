@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+
+let numbers = [2,3,4,5,4,5];
+
+
+let duplicatevalue = [];
+
+let duplicate = numbers.reduce(function(pre,value){
+
+    if(!duplicatevalue.includes( value)){
+        duplicatevalue.push(value);
+        
+    }
+    
+},[])
+console.log(duplicate)
+
+console.log(duplicatevalue)
+
+
+
+
+
+
+
+// for(i of numbers){
+//    if(!duplicatevalue.includes( i)){
+//        duplicatevalue.push(i);
+//    }
+   
+// }
+// console.log(numbers)
+// console.log("Array after removing duplicates: ", duplicatevalue) 
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
